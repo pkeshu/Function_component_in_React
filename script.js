@@ -1,4 +1,4 @@
-const Item=(props)=>(
+const Person=(props)=>(
     <div>
             <p>Name: {props.name}</p>
             <p>Roll No.: {props.roll}</p>
@@ -58,7 +58,7 @@ class ReactApp extends React.Component{
             <h3>Details of my Friends</h3>
             {
                 this.friends.map(friend=>
-                <Item name={friend.name}
+                <Person name={friend.name}
                     roll={friend.roll}
                     address={friend.address}
                     mobile={friend.mobile}/>)
